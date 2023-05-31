@@ -10,10 +10,30 @@
         <h1 id="title">Survey Form</h1>
         <p id="description">Please fill out this survey to help us improve our products and services.</p>
         <form id="survey-form">
-            <input id="name" type="text" required />
-            <input id="email" type="emai" required />
-            <input id="number" type="number" min="100" max="200" />
-
+            <label id="name-label">
+                <input id="name" type="text" required placeholder="Enter your name here."/>
+            </label>
+            <label id="email-label">
+                <input id="email" type="emai" required placeholder="Enter your email here"/>
+            </label>
+            <label id="number-label">
+                <input id="number" type="number" min="100" max="200" placeholder="Enter a number between 100 and 200 here"/>
+            </label>
+            <label id="dropdown-label">
+                <select id="dropdown">
+                    <option>How did you hear about us?</option>
+                    <option>Newspaper</option>
+                    <option>Television</option>
+                    <option>Radio</option>
+                    <option>Website</option>
+                </select>
+            </label>
+                    <input type="radio" id="html" name="favorite-language" value="HTML".>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="css" name="favorite-language" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="radio" id="javascript" name="favorite-language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
         </form>
     </body>
 </html>
